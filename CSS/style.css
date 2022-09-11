@@ -1,0 +1,368 @@
+/**Reseteo CSS**/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+                    /***************Header*********************/
+
+/*sacar subrayado a los "a" y aplicar estilo por pasaje de cursor, sacar tambien decorado a listas*/
+.header a{
+    text-decoration: none;
+    
+}
+
+.header a:hover{
+    color: aquamarine;
+}
+.header li, ul{
+    list-style: none;
+}
+
+/*bloque header aplicando flex*/
+header .header{
+    /*background: aquamarine;*/
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
+    padding-bottom: 0.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*header imagen*/
+/*.header_item_modificar{
+    margin: 0.5% 0 0.5% 0.5%;
+}
+*/
+
+/*header div img e input*/
+.header_item_encabezado{
+    padding: 0.5% 0 0.5% 0.5%;
+    display: flex;
+    align-items: flex-end;
+}
+.header_item_encabezado input{
+    height: 35px;
+}
+/*header img*/
+.header_item_encabezado img{
+    padding-right: 2%;
+}
+
+/*header button*/
+.header_item_encabezado a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px groove silver;
+    border-radius: 3px;
+    background-color: silver;
+    color: aliceblue;
+    text-align: center;
+    height: 35px;
+    margin-left: 2%;
+    font-size: 30px;
+}
+
+/*header nav */
+nav.header_item_modificar{
+    display: flex;
+    align-items: flex-end;
+    padding:0 0.5% 0.5% 0;
+}
+
+/*contenedor de los items del nav */
+.header_item_modificar>ul{
+    display:flex;
+    justify-items: space-around;
+    align-items: center;
+}
+
+/*items nav li*/
+.header_item_modificar li{
+    border:2px groove silver;
+    background-color: silver;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 5px;
+}
+
+/*items nav a*/
+.header_item_modificar a{
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*sub menu productos*/
+.header_item_modificar_submenu{
+    display: none;
+    margin-top: 7px;
+    margin-left: -7px;
+    
+}
+
+.header_item_modificar_submenu li{
+    width: 105%;
+    margin: 0px;
+    padding: 7.2px;
+}
+
+.header_flex_container_Productos:hover .header_item_modificar_submenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    position: absolute;
+}
+
+/*header media query*/ 
+@media screen and (max-width: 820px){
+    header .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .header_flex_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_item_encabezado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+    }
+    .header_item_encabezado img{
+        padding-bottom: 2%;
+        max-width: 100%;
+    }
+    .header_item_encabezado input{
+        text-align: center;
+        height: 50%;
+    }
+    .header_item_encabezado a{
+        margin-top: 2%;
+        margin-left: -3%;
+        font-size: 20px;
+        height: 30px;
+    }
+    .header_item_modificar a{
+        font-size: 20px;
+    }
+    .header_item_modificar_submenu li{
+        width: 90%;
+        margin: 0px;
+        padding: 0%;
+        border:none;
+        background-color: silver;
+    }
+    .header_item_modificar_submenu{
+        margin: 0%;
+    }
+    .header_flex_container_Productos:hover .header_item_modificar_submenu{
+        position: relative;
+    }
+}
+
+                    /***************Section*********************/
+
+/*color background*/
+section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*importar borde de texto*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);   
+
+/*padding en contenido de section de htmls*/
+section .content_img_slider, .content_prom, #content_quienessomos, .content_tabla, .contect_formulario{
+    padding:2% 0 2% 0.5%;
+}
+
+/*h1 de los titulos*/
+section .content_titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: aquamarine;
+    -webkit-text-stroke: 0.5px darkgreen;
+}
+/*div promociones*/
+.content_prom h2{
+    text-align: center;
+}
+
+#content_quienessomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*texto de quienes somos*/
+#content_quienessomos p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    border: 5px groove aquamarine;
+    width: 65%;
+    height: 50%;
+    font-size: 25px;
+    color: aquamarine;
+    -webkit-text-stroke: 0.5px darkgreen;
+    background-color: silver;
+    text-align: center;
+}
+/*Productos*/
+    .content_tabla{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content_tabla .content_prod{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+        border-style: groove;
+        border-color: goldenrod;
+    }
+    .content_prod img{
+        padding-bottom: 2%;
+    }
+    .content_prod h2{
+        text-align: center;
+    }
+
+/*formulario Ayuda.html*/
+.Form label input{
+    padding-bottom: 0.5%;
+}
+.contect_formulario form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+/*Media query section index*/
+@media screen and (max-width: 820px){
+    /*slider disabled*/
+    .content_img_slider{
+        display: none;
+    }
+    .content_prom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+    }
+    .content_prom img{
+        padding-bottom: 2%;
+        width: 80%;
+    }
+    #content_quienessomos p, #content_quienessomos h2, section .content_titulo{
+        font-size: 120%;
+    }
+    /*media query ayuda*/
+    /*.contect_formulario div{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding-bottom: 2%;
+    }*/
+    .contect_formulario div{
+        padding-bottom: 2%;
+        max-width: 150px;
+    }
+    .contect_formulario div textarea, .contect_formulario input{
+        max-width: 150px;
+    }
+    /*media query productos*/
+    .content_tabla .content_prod{
+        border-style: none;
+        border-color: none;
+    }
+    .content_tabla .content_prod h2{
+        font-size: 120%;
+    }
+}
+                    /***************Footer*********************/
+
+footer{
+    margin-top: auto;
+}
+
+/*sacar subrayado a los "a" footer*/
+.footer a{
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color:aliceblue;
+}
+
+/*bloque footer*/
+footer .footer{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
+    font-family:Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 0.5%;
+    padding-left: 0.5%;
+}
+
+.footer .footer_flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*items del bloque footer*/
+.footer_flex div{
+    padding: 0.5% 2% 2% 0;
+}
+
+/*contacto*/
+.footer p{
+    padding: 2% 0 0 0;
+}
+
+/*mas informacion*/
+.item_flex_informacion p{
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+
+/*img redes sociales*/
+.footer_social img{
+    width: 50px;
+}
+
+/*mas informacion lista*/
+.footer nav div li{
+    display: inline-block;
+}
+
+/*Media query footer*/
+@media screen and (max-width: 820px){
+    footer .footer{
+        font-size: 70%;
+    }
+    .footer_social{
+        text-align: right;
+    }
+    .footer_social img{
+        width: 20%;
+    }
+    .item_flex_informacion ul{
+        text-align: center;
+    }
+    .item_flex_contacto p{
+        padding-left: 10%;
+    }
+}
