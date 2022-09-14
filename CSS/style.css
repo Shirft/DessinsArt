@@ -4,8 +4,8 @@
     padding: 0;
 }
 body{
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     min-height: 100vh;
 }
 
@@ -142,69 +142,6 @@ section .content_titulo, .content_titulo_ofertas{
     transition: 0.5s;
 }
 
-/*Animaciones*/
-#head_animacion div{
-    background-image: linear-gradient(green, rgb(0, 242, 255));
-    text-align: center;
-    height: 5%;
-    padding: 2.5%;
-}
-.cubo3{
-    background-color: brown;
-    height: 100px;
-    width: 100px;
-    margin-top: 200px;
-    margin-bottom: 300px;
-    transition: all 1s;
-}
-.cubo3:hover{
-    transform: rotate(360deg) scale(2) translateY(100px);
-    -webkit-transform: rotate(360deg) scale(2) translateY(100px);
-    -o-transform: rotate(360deg) scale(2) translateY(100px);
-    -moz-transform: rotate(360deg) scale(2) translateY(100px);
-}
-.cubo2{
-    background-color: silver;
-    height: 100px;
-    width: 100px;
-    margin-top: 200px;
-}
-.cubo2:hover{
-    animation: animado 3s;
-}
-@keyframes animado{
-    5%{
-        background-color: brown;
-        border-radius: 5px;
-    }
-    15%{
-        background-color: black;
-        border-radius: 25px;
-    }
-    25%{
-        width: 500px;
-    }
-    50%{
-        width: 300px;
-        background-color: brown;
-    }
-}
-.cubo{
-    background-color: black;
-    height: 100px;
-    width: 100px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    animation: zoomInDown 2s;
-    animation-duration: 2s;
-    animation-delay: 0.2s;
-}
-.volver_animacion{
-    background-color: silver;
-    color: white;
-    font-size: 50px;
-    text-decoration: none;
-}
 
 /*Media query section index*/
 @media screen and (max-width: 820px){
