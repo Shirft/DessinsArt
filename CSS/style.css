@@ -73,7 +73,14 @@ section .content_titulo, .content_titulo_ofertas{
 .content_prom h2{
     text-align: center;
 }
-
+.content_prom a{
+ padding-top: 0.5rem;
+}
+.content_prom img:hover{
+    box-shadow: 10px 25px 30px black;
+    transition: 0.5s;
+}
+/*quienes somos*/
 #content_quienessomos{
     display: flex;
     flex-direction: column;
@@ -94,15 +101,8 @@ section .content_titulo, .content_titulo_ofertas{
     text-align: center;
 }
 /*Productos - Ver todo*/
-    .content_tabla{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .content_tabla .content_prod{
-        display: flex;
-        flex-direction: column;
-        padding: 4%;
+        padding: 2%;
         border: green groove;
         border-radius: 2%;
         margin: 1%;
@@ -111,24 +111,9 @@ section .content_titulo, .content_titulo_ofertas{
         box-shadow: 10px 25px 30px black;
         transition: 0.5s;
     }
-    .content_prod img{
-        padding-bottom: 2%;
-    }
-    .content_prod h2{
-        text-align: center;
-    }
 
-/*Ofertas/Promociones*/
-/*.content_titulo_ofertas{
-    text-align: center;
-}
-.content_flex_ofertas{
-    display: flex;
-    justify-content: center;
-}*/
+/*Ofertas/promociones*/
 .content_flex_ofertas>div{
-  /*  display: flex;
-    flex-direction: column;*/
     border-radius: 2%;
     text-align: center;
     padding: 1%;
@@ -143,61 +128,6 @@ section .content_titulo, .content_titulo_ofertas{
 }
 
 
-/*Media query section index*/
-@media screen and (max-width: 820px){
-    /*slider disabled*/
-    .content_img_slider{
-        display: none;
-    }
-    .content_prom{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: space-between;
-    }
-    .content_prom img{
-        padding-bottom: 2%;
-        width: 80%;
-    }
-    #content_quienessomos p, #content_quienessomos h2, section .content_titulo{
-        font-size: 120%;
-    }
-    /*media query ayuda*/
-    /*.contect_formulario div{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        padding-bottom: 2%;
-    }*/
-    .contect_formulario div{
-        padding-bottom: 2%;
-        max-width: 150px;
-    }
-    .contect_formulario div textarea, .contect_formulario input{
-        max-width: 150px;
-    }
-    /*media query productos*/
-    .content_tabla .content_prod{
-        border-style: none;
-        border-color: none;
-    }
-    .content_tabla .content_prod h2{
-        font-size: 120%;
-    }
-    /*media query ofertas/promociones*/
-    .content_flex_ofertas{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .content_flex_ofertas>div{
-        margin-bottom: 4%;
-    }
-    .content_flex_ofertas>div:hover{
-        box-shadow: 10px 12px 10px black;
-        transition: 0.5s;
-    }
-}
                     /***************Footer*********************/
 
 footer{
@@ -246,7 +176,7 @@ footer .footer{
     text-align: center;
 }
 .accordion-button{
-    padding-left: 45%;
+    padding-left: 40%;
     font-family: Arial, Helvetica, sans-serif;
 }
 .accordion-button:not(.collapsed)::after {
