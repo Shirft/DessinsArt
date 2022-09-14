@@ -4,8 +4,8 @@
     padding: 0;
 }
 body{
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -119,19 +119,19 @@ section .content_titulo, .content_titulo_ofertas{
     }
 
 /*Ofertas/Promociones*/
-.content_titulo_ofertas{
+/*.content_titulo_ofertas{
     text-align: center;
 }
 .content_flex_ofertas{
     display: flex;
     justify-content: center;
-}
+}*/
 .content_flex_ofertas>div{
-    display: flex;
-    flex-direction: column;
+  /*  display: flex;
+    flex-direction: column;*/
     border-radius: 2%;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     border: green groove;
     border-width: 50%;
     margin: 1%;
