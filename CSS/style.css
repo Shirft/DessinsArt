@@ -10,17 +10,13 @@ body{
 }
 
                     /***************Header*********************/
-/*.border{
-    --bs-border-color: #198754;
-    --bs-border-radius: 1.0rem;
-}*/
+
 .nav-item, button{
     font-size: 110%;
     font-family: Arial, Helvetica, sans-serif;
 }                    
 .header .nav-item>a:hover{
     color: aquamarine;
-    /*--bs-border-color: #7FFFD4;*/
 }
 .dropdown-menu{
     background-color: silver;
@@ -43,6 +39,10 @@ header .header{
     --bs-btn-active-color: #7FFFD4;
     --bs-btn-active-bg: none;
     --bs-btn-active-border-color: #7FFFD4;
+}
+/*color items submenu*/
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #198754;
 }
 
                     /***************Section*********************/
@@ -127,6 +127,15 @@ section .content_titulo, .content_titulo_ofertas{
     transition: 0.5s;
 }
 
+/*Ayuda*/
+.formulario{
+    padding:2%;
+    margin: 0;
+}
+
+#inputState{
+    width: 50%;
+}
 
                     /***************Footer*********************/
 
@@ -185,4 +194,7 @@ footer .footer{
 }
 .accordion-button::after{
     margin-left: 0;
+}
+.accordion-button:hover{
+    color:#7FFFD4;
 }
