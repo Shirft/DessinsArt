@@ -101,16 +101,18 @@ section .content_titulo, .content_titulo_ofertas{
     text-align: center;
 }
 /*Productos - Ver todo*/
-    .content_tabla .content_prod{
-        padding: 2%;
-        border: green groove;
-        border-radius: 2%;
-        margin: 1%;
-    }
-    .content_tabla .content_prod:hover{
-        box-shadow: 10px 25px 30px black;
-        transition: 0.5s;
-    }
+
+.content_prod{
+    padding: 2%;
+    border: green groove;
+    border-radius: 2%;
+    margin: 1%;
+    height: 10%;
+}
+.content_tabla .content_prod:hover{
+    box-shadow: 10px 25px 30px black;
+    transition: 0.5s;
+}    
 
 /*Ofertas/promociones*/
 .content_flex_ofertas>div{
@@ -129,7 +131,7 @@ section .content_titulo, .content_titulo_ofertas{
 
 /*Ayuda*/
 .formulario{
-    padding:2%;
+    padding:2% 10% 0% 5%;
     margin: 0;
 }
 
