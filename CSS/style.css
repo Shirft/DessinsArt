@@ -2,18 +2,19 @@
 *{
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
+
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 100%;
 }
 
                     /***************Header*********************/
-
+/*Barra nav */
 .nav-item, button{
-    font-size: 110%;
+    font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }                    
 .header .nav-item>a:hover{
@@ -25,14 +26,14 @@ body{
 .button:hover{
     color: aquamarine;
 }
-/*bloque header aplicando flex*/
+/*color background*/
 header .header{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
 
 }
 
-/*button*/
+/*button buscar*/
 .btn-outline-success{
     --bs-btn-hover-bg:none;
     --bs-btn-hover-color: #7FFFD4;
@@ -55,7 +56,8 @@ section{
     flex-direction: column;
     align-items: center;
 }
-/*importar borde de texto*/
+
+/*importar borde de texto quienes somos*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);   
 
 /*padding en contenido de section de htmls*/
@@ -70,6 +72,7 @@ section .content_titulo, .content_titulo_ofertas{
     color: aquamarine;
     -webkit-text-stroke: 0.5px darkgreen;
 }
+
 /*div promociones*/
 .content_prom h2{
     text-align: center;
@@ -81,6 +84,7 @@ section .content_titulo, .content_titulo_ofertas{
     box-shadow: 10px 25px 30px black;
     transition: 0.5s;
 }
+
 /*quienes somos*/
 #content_quienessomos{
     display: flex;
@@ -101,8 +105,8 @@ section .content_titulo, .content_titulo_ofertas{
     background-color: silver;
     text-align: center;
 }
-/*Productos - Ver todo*/
 
+/*Productos - Ver todo*/
 .content_prod{
     padding: 2%;
     border: green groove;
@@ -121,8 +125,7 @@ section .content_titulo, .content_titulo_ofertas{
     text-align: center;
     padding: 1%;
     border: green groove;
-    border-width: 50%;
-    margin: 1%;
+    margin: 1% 1% 2% 4%;
     
 }
 .content_flex_ofertas>div:hover{
@@ -132,10 +135,10 @@ section .content_titulo, .content_titulo_ofertas{
 
 /*Ayuda*/
 .formulario{
-    padding:2% 10% 0% 5%;
+    padding:2% 10% 2% 5%;
     margin: 0;
-}
 
+}
 #inputState{
     width: 50%;
 }
@@ -149,8 +152,7 @@ footer{
 /*sacar subrayado a los "a" footer*/
 .footer a{
     text-decoration: none;
-}
-    
+} 
 .footer a:hover{
     color:aliceblue;
 }
@@ -169,10 +171,10 @@ footer .footer{
 .footer_social img{
     width: 50px;
 }
-
 .footer_flex{
     padding: 0.5%;
 }
+
 /*accordion*/
 .accordion{
     --bs-accordion-bg:none;
