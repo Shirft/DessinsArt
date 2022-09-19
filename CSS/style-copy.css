@@ -1,0 +1,205 @@
+/**Reseteo CSS**/
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+                    /***************Header*********************/
+/*Barra nav */
+.nav-item, button{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}                    
+.header .nav-item>a:hover{
+    color: aquamarine;
+}
+.dropdown-menu{
+    background-color: silver;
+}
+.button:hover{
+    color: aquamarine;
+}
+/*color background*/
+header .header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+/*button buscar*/
+.btn-outline-success{
+    --bs-btn-hover-bg:none;
+    --bs-btn-hover-color: #7FFFD4;
+    --bs-btn-hover-border-color: #7FFFD4;
+    --bs-btn-active-color: #7FFFD4;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border-color: #7FFFD4;
+}
+/*color items submenu*/
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #198754;
+}
+
+                    /***************Section*********************/
+
+/*color background*/
+section{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*importar borde de texto quienes somos*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);   
+
+/*padding en contenido de section de htmls*/
+section .content_img_slider, .content_prom, #content_quienessomos, .content_tabla, .contect_formulario, .content_ofertas{
+    padding:2% 0 2% 0.5%;
+}
+
+/*h1 de los titulos*/
+section .content_titulo, .content_titulo_ofertas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: aquamarine;
+    -webkit-text-stroke: 0.5px darkgreen;
+}
+
+/*div promociones*/
+.content_prom h2{
+    text-align: center;
+}
+.content_prom a{
+ padding-top: 0.5rem;
+}
+.content_prom img:hover{
+    box-shadow: 10px 25px 30px black;
+    transition: 0.5s;
+}
+
+/*quienes somos*/
+#content_quienessomos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*texto de quienes somos*/
+#content_quienessomos p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    border: 5px groove aquamarine;
+    width: 65%;
+    height: 50%;
+    font-size: 25px;
+    color: aquamarine;
+    -webkit-text-stroke: 0.5px darkgreen;
+    background-color: silver;
+    text-align: center;
+}
+
+/*Productos - Ver todo*/
+.content_prod{
+    padding: 2%;
+    border: green groove;
+    border-radius: 2%;
+    margin: 1%;
+    height: 10%;
+}
+.content_tabla .content_prod:hover{
+    box-shadow: 10px 25px 30px black;
+    transition: 0.5s;
+}    
+
+/*Ofertas/promociones*/
+.content_flex_ofertas>div{
+    border-radius: 2%;
+    text-align: center;
+    padding: 1%;
+    border: green groove;
+    margin: 1% 1% 2% 4%;
+    
+}
+.content_flex_ofertas>div:hover{
+    box-shadow: 10px 25px 20px black;
+    transition: 0.5s;
+}
+
+/*Ayuda*/
+.formulario{
+    padding:2% 10% 2% 5%;
+    margin: 0;
+
+}
+#inputState{
+    width: 50%;
+}
+
+                    /***************Footer*********************/
+
+footer{
+    margin-top: auto;
+}
+
+/*sacar subrayado a los "a" footer*/
+.footer a{
+    text-decoration: none;
+} 
+.footer a:hover{
+    color:aliceblue;
+}
+
+/*bloque footer*/
+footer .footer{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
+    font-family:Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 0.5%;
+    padding-left: 0.5%;
+}
+
+/*img redes sociales*/
+.footer_social img{
+    width: 50px;
+}
+.footer_flex{
+    padding: 0.5%;
+}
+
+/*accordion*/
+.accordion{
+    --bs-accordion-bg:none;
+    --bs-accordion-border-color:none;
+    --bs-accordion-active-bg: none;
+    --bs-accordion-color:none;
+    --bs-accordion-active-color:#7FFFD4;
+    --bs-accordion-btn-focus-border-color:none;
+    --bs-accordion-btn-focus-box-shadow:none;
+    --bs-accordion-btn-color:none;
+}
+.accordion-header{
+    text-align: center;
+}
+.accordion-button{
+    padding-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-button::after{
+    margin-left: 0;
+}
+.accordion-button:hover{
+    color:#7FFFD4;
+}
