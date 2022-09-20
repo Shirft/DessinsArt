@@ -1,9 +1,83 @@
+/*variable color background header y footer*/
+/*color botones de menu, navbar y footer*/
+/*medidas en porcetaje*/
+/*medidas en px*/
+/*medida margin*/
 header {
+  /*color background*/
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(142, 233, 126) 35%, rgb(0, 212, 255) 100%);
+  /*submenu navbar*/
+  /*navbar*/
+  /*boton buscar*/
+}
+header .nav-item, header button {
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header .nav-item a:not(.sub):hover, header button a:not(.sub):hover {
+  color: aquamarine;
+}
+header .dropdown-menu {
+  background-color: silver;
+  --bs-dropdown-link-active-bg: #198754;
+  --bs-dropdown-link-hover-bg: #7FFFD4;
+}
+header .button {
+  --bs-btn-hover-bg:none;
+  --bs-btn-hover-color: #7FFFD4;
+  --bs-btn-hover-border-color: #7FFFD4;
+  --bs-btn-active-color: #7FFFD4;
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: #7FFFD4;
 }
 
 footer {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(142, 233, 126) 35%, rgb(0, 212, 255) 100%);
+  margin-top: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+  border-radius: 0.5%;
+  padding-left: 0.5%;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: whitesmoke none;
+}
+footer .footer_social img {
+  width: 50px;
+}
+footer .footer_flex {
+  padding: 0.5%;
+}
+footer .footer_flex .accordion {
+  --bs-accordion-bg:none;
+  --bs-accordion-border-color:none;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-color:none;
+  --bs-accordion-active-color:#7FFFD4;
+  --bs-accordion-btn-focus-border-color:none;
+  --bs-accordion-btn-focus-box-shadow:none;
+  --bs-accordion-btn-color:none;
+}
+footer .footer_flex .accordion .accordion-header {
+  text-align: center;
+}
+footer .footer_flex .accordion .accordion-button {
+  padding-left: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .footer_flex .accordion .accordion-button:after {
+  margin-left: 0;
+}
+footer .footer_flex .accordion .accordion-button:hover {
+  color: aquamarine;
+}
+footer .footer_flex .accordion .accordion-button .accordion-button:not(.collapsed):after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
 }
 
 /*# sourceMappingURL=style.css.map */

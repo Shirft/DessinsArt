@@ -13,7 +13,7 @@ body{
 
                     /***************Header*********************/
 /*Barra nav */
-.nav-item, button{
+/*.nav-item, button{
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }                    
@@ -25,27 +25,27 @@ body{
 }
 .button:hover{
     color: aquamarine;
-}
+}*/
 /*color background*/
-header .header{
+/*header .header{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
 
 }
-
+*/
 /*button buscar*/
-.btn-outline-success{
+/*.btn-outline-success{
     --bs-btn-hover-bg:none;
     --bs-btn-hover-color: #7FFFD4;
     --bs-btn-hover-border-color: #7FFFD4;
     --bs-btn-active-color: #7FFFD4;
     --bs-btn-active-bg: none;
     --bs-btn-active-border-color: #7FFFD4;
-}
+}*/
 /*color items submenu*/
-.dropdown-menu{
+/*.dropdown-menu{
     --bs-dropdown-link-active-bg: #198754;
-}
+}*/
 
                     /***************Section*********************/
 
@@ -145,20 +145,20 @@ section .content_titulo, .content_titulo_ofertas{
 
                     /***************Footer*********************/
 
-footer{
+/*footer{
     margin-top: auto;
 }
-
+*/
 /*sacar subrayado a los "a" footer*/
-.footer a{
+/*.footer a{
     text-decoration: none;
 } 
 .footer a:hover{
     color:aliceblue;
 }
-
+*/
 /*bloque footer*/
-footer .footer{
+/*footer .footer{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
     font-family:Arial, Helvetica, sans-serif;
     color: whitesmoke;
@@ -166,17 +166,17 @@ footer .footer{
     border-radius: 0.5%;
     padding-left: 0.5%;
 }
-
+*/
 /*img redes sociales*/
-.footer_social img{
+/*.footer_social img{
     width: 50px;
 }
 .footer_flex{
     padding: 0.5%;
-}
+}*/
 
 /*accordion*/
-.accordion{
+/*.accordion{
     --bs-accordion-bg:none;
     --bs-accordion-border-color:none;
     --bs-accordion-active-bg: none;
@@ -202,4 +202,4 @@ footer .footer{
 }
 .accordion-button:hover{
     color:#7FFFD4;
-}
+}*/
