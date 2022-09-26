@@ -1,0 +1,34 @@
+/*aplicacion extend*/
+.content_img_slider{
+    padding:2% 0 2% 0.5%;
+}
+.content_prom{
+     @extend .content_img_slider;
+}
+#content_quienessomos{
+     @extend .content_img_slider;
+}
+.content_tabla{
+     @extend .content_img_slider;  
+}
+.contect_formulario{
+     @extend .content_img_slider;
+}
+.content_ofertas{
+     @extend .content_img_slider
+}
+
+/*aplicacion map y extend*/
+.content_titulo{
+    font-family: map-get($map: $map-titulos, $key: Ffamily);
+    font-size: map-get($map: $map-titulos, $key: Fsize);
+    color: map-get($map: $map-titulos, $key: Mcolor);
+    -webkit-text-stroke: map-get($map: $map-titulos, $key: Ttext);
+}
+.content_titulo_ofertas{
+    @extend .content_titulo;
+}
+/*mixin con parametro*/
+#content_quienessomos{
+    @include flexin(flex, column, center);
+}

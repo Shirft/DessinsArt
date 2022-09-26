@@ -58,21 +58,21 @@ section{
 }
 
 /*importar borde de texto quienes somos*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);   
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);   */
 
 /*padding en contenido de section de htmls*/
-section .content_img_slider, .content_prom, #content_quienessomos, .content_tabla, .contect_formulario, .content_ofertas{
+/*section .content_img_slider, .content_prom, #content_quienessomos, .content_tabla, .contect_formulario, .content_ofertas{
     padding:2% 0 2% 0.5%;
 }
-
+*/
 /*h1 de los titulos*/
-section .content_titulo, .content_titulo_ofertas{
+/*section .content_titulo, .content_titulo_ofertas{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: aquamarine;
     -webkit-text-stroke: 0.5px darkgreen;
 }
-
+*/
 /*div promociones*/
 .content_prom h2{
     text-align: center;
@@ -86,11 +86,11 @@ section .content_titulo, .content_titulo_ofertas{
 }
 
 /*quienes somos*/
-#content_quienessomos{
+/*#content_quienessomos{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}*/
 
 /*texto de quienes somos*/
 #content_quienessomos p{

@@ -28,3 +28,18 @@ $margin:
 0,
 auto,
 none;
+
+/*mapa h1 de titulos*/
+$map-titulos:(
+    Ffamily: Arial,
+    Fsize: 30px,
+    Mcolor: aquamarine,
+    Ttext: 0.5px darkgreen
+);
+
+/*mixin con parametro*/
+@mixin flexin($display, $direction, $align) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+}
