@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dessins Art es un emprendimiento que elabora productos artesanales 100% pintados a mano">
+    <meta name="keywords" content="Dessins Art, Art, Arte, Productos, Artesanal, pintado, cuadros, mates, personalizados, anime">
     <link rel="shorcut icon" href="./Img/logo.png">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/style-copy.css">
-    <title>Dessins Art</title>
+    <title>Dessins Art - Productos Artesanales</title>
 </head>
 <body>
   <!--header, encabezado de la pagina-->
@@ -17,38 +19,38 @@
     <div class="header">
       <nav class="navbar navbar-expand-lg nav-fill">
         <div class="container"> 
-          <a class="navbar-brand" href="./index.html"><img src="./Img/logo.png" alt="Imagen Dessins Art"/></a>
+          <a class="navbar-brand" href="./index.html" title="Enlace al inicio Dessins Art"><img src="./Img/logo.png" alt="Imagen Dessins Art"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="barra desplegable">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse align-self-end" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="./index.html" title="Enlace al inicio de la pagina">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./index.html#content_quienessomos">Quienes somos</a>
+                <a class="nav-link" href="./index.html#content_quienessomos" title="Enlace a Quienes somos">Quienes somos</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Enlace a Productos">
                   Productos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item sub" href="./Cuadros.html">Cuadros</a></li>
-                  <li><a class="dropdown-item sub" href="./Mates.html">Mates</a></li>
-                  <li><a class="dropdown-item sub" href="./Productos.html">Ver todo</a></li>
+                  <li><a class="dropdown-item sub" href="./Cuadros.html" title="Enlace a seccion cuadros">Cuadros</a></li>
+                  <li><a class="dropdown-item sub" href="./Mates.html" title="Enlace a seccion mates">Mates</a></li>
+                  <li><a class="dropdown-item sub" href="./Productos.html" title="Enlace a ver todas las secciones">Ver todo</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Ofertas.html">Ofertas/Promociones</a>
+                <a class="nav-link" href="./Ofertas.html" title="Enlace a Ofertas y promociones">Ofertas/Promociones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Ayuda.html">Ayuda</a>
+                <a class="nav-link" href="./Ayuda.html" title="Enlace al formulario de ayuda">Ayuda</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Ingrese producto" aria-label="Search">
-              <button class="btn btn-outline-success button" type="submit">Buscar</button>
+              <button class="btn btn-outline-success button" type="submit" title="Buscar">Buscar</button>
             </form>
           </div>
         </div>
@@ -60,6 +62,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-10">
+                    <h1 class="titulo_Central text-center">¡Personalizados mas solicitados!</h1>
                     <div id="Slider" class="carousel slide content_img_slider" data-bs-ride="carousel">
                       <div class="carousel-indicators">
                         <button type="button" data-bs-target="#Slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -67,7 +70,7 @@
                       </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="5000">
-                                <a href="./Cuadros.html"><img src="./Img/cuadrokakashi.png" class="d-block w-100" alt="Cuadro gai y kakashi" title="kakashi y gai Naruto"/></a>
+                                <a href="./Cuadros.html"><img src="./Img/cuadrokakashi.png" class="d-block w-100" alt="Cuadro gai y kakashi" title="Cuadro kakashi y gai Naruto"/></a>
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
                                 <a href="./Mates.html"><img src="./Img/vasogojo2.png" class="d-block w-100" alt="mate gojo" title="Mate gojo jujutsu kaisen"/></a>
@@ -88,9 +91,9 @@
         <div class="container content_prom">
             <h2 class="content_titulo">Promociones</h2>
             <div class="row justify-content-center">
-                <a class="col-lg-4 col-md-6 col-sm-12" href="./Ofertas.html"><img class="col-12" src="./Img/levi.png" alt="promo cuadro de levi"/></a>  
-                <a class="col-lg-4 col-md-6 col-sm-12" href="./Ofertas.html"><img class="col-12" src="./Img/megumi.png" alt="promo cuadro de megumi"/></a>      
-                <a class="col-lg-4 col-md-6 col-sm-12" href="./Ofertas.html"><img class="col-12" src="./Img/pain.png" alt="promo cuadro de pain"/></a> 
+                <a class="col-lg-4 col-md-6 col-sm-12" href="./Ofertas.html"><img class="col-12" src="./Img/levi.png" alt="promo cuadro de levi" title="promo cuadro de levi"/></a>  
+                <a class="col-lg-4 col-md-6 col-sm-12" href="./Ofertas.html"><img class="col-12" src="./Img/megumi.png" alt="promo cuadro de megumi" title="promo cuadro de megumi"/></a>      
+                <a class="col-lg-4 col-md-6 col-sm-12" href="./Ofertas.html"><img class="col-12" src="./Img/pain.png" alt="promo cuadro de pain" title="promo cuadro de pain"/></a> 
             </div>
         </div>
         <article id="content_quienessomos">
@@ -134,8 +137,8 @@
                 </div>
                 <div class="footer_social col-lg-2">
                     <p>Seguinos en:</p>
-                    <a href="#" class="col-6"><img class="col-12" href="#" src="./Img/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/dessins_artt/" class="col-6" target="_blank"><img class="col-12" href="#" src="./Img/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="col-6"><img class="col-12" src="./Img/facebook.png" alt="facebook" title="Facebook"></a>
+                    <a href="https://www.instagram.com/dessins_artt/" class="col-6" target="_blank"><img class="col-12" src="./Img/instagram.png" alt="Instagram" title="Instagram"></a>
                 </div>  
             </nav>  
         </div>

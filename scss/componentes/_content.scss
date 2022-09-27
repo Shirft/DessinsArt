@@ -15,7 +15,14 @@
      @extend .content_img_slider;
 }
 .content_ofertas{
-     @extend .content_img_slider
+     @extend .content_img_slider;
+}
+.titulo_Central{
+    @extend .content_img_slider;
+    padding-bottom: 0;
+    font-family: map-get($map: $map-titulos, $key: Ffamily);
+    color: map-get($map: $map-titulos, $key: Mcolor);
+    -webkit-text-stroke: map-get($map: $map-titulos, $key: Ttext);
 }
 
 /*aplicacion map y extend*/
@@ -27,6 +34,17 @@
 }
 .content_titulo_ofertas{
     @extend .content_titulo;
+}
+.Formulario_ayuda{
+    @extend .content_img_slider;
+    @extend .content_titulo;
+    padding-bottom: 0;
+}
+.titulo_cuadros{
+    @extend .Formulario_ayuda;
+}
+.titulo_mates{
+    @extend .Formulario_ayuda;
 }
 /*mixin con parametro*/
 #content_quienessomos{

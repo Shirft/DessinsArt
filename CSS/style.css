@@ -83,16 +83,27 @@ footer .footer_flex .accordion .accordion-button .accordion-button:not(.collapse
 }
 
 /*aplicacion extend*/
-.content_img_slider, .content_ofertas, .contect_formulario, .content_tabla, #content_quienessomos, .content_prom {
+.content_img_slider, .Formulario_ayuda, .titulo_mates, .titulo_cuadros, .titulo_Central, .content_ofertas, .contect_formulario, .content_tabla, #content_quienessomos, .content_prom {
   padding: 2% 0 2% 0.5%;
 }
 
+.titulo_Central {
+  padding-bottom: 0;
+  font-family: Arial;
+  color: aquamarine;
+  -webkit-text-stroke: 0.5px darkgreen;
+}
+
 /*aplicacion map y extend*/
-.content_titulo, .content_titulo_ofertas {
+.content_titulo, .Formulario_ayuda, .titulo_mates, .titulo_cuadros, .content_titulo_ofertas {
   font-family: Arial;
   font-size: 30px;
   color: aquamarine;
   -webkit-text-stroke: 0.5px darkgreen;
+}
+
+.Formulario_ayuda, .titulo_mates, .titulo_cuadros {
+  padding-bottom: 0;
 }
 
 /*mixin con parametro*/
