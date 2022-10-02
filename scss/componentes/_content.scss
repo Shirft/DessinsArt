@@ -1,0 +1,57 @@
+/*padding en contenido de section de htmls*/
+.content_img_slider{
+    padding:2% 0 2% 0.5%;
+}
+.content_prom{
+     @extend .content_img_slider;
+}
+#content_quienessomos{
+     @extend .content_img_slider;
+}
+.content_tabla{
+     @extend .content_img_slider;  
+}
+.contect_formulario{
+     @extend .content_img_slider;
+}
+.content_ofertas{
+     @extend .content_img_slider;
+}
+.titulo_Central{
+    @extend .content_img_slider;
+    padding-bottom: 0;
+    font-family: map-get($map: $map-titulos, $key: Ffamily);
+    color: map-get($map: $map-titulos, $key: Mcolor);
+    -webkit-text-stroke: map-get($map: $map-titulos, $key: Ttext);
+}
+/*color background*/
+section{
+    @include flexin(flex, column, center);
+    background-color: nth($list: $bt-color, $n: 7);
+    /*h1 de los titulos*/
+    .content_titulo{
+        font-family: map-get($map: $map-titulos, $key: Ffamily);
+        font-size: map-get($map: $map-titulos, $key: Fsize);
+        color: map-get($map: $map-titulos, $key: Mcolor);
+        -webkit-text-stroke: map-get($map: $map-titulos, $key: Ttext);
+    }
+    .content_titulo_ofertas{
+        @extend .content_titulo;
+    }
+    .Formulario_ayuda{
+        @extend .content_img_slider;
+        @extend .content_titulo;
+        padding-bottom: 0;
+    }
+    .titulo_cuadros{
+        @extend .Formulario_ayuda;
+    }
+    .titulo_mates{
+        @extend .Formulario_ayuda;
+    }
+    /*flex texto quienes somos*/
+    #content_quienessomos{
+        @include flexin(flex, column, center);
+    }
+}
+

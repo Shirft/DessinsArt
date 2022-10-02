@@ -1,0 +1,49 @@
+/*variable color background header y footer*/
+$bg-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
+
+/*color botones de menu, navbar y footer*/
+$bt-color:
+aquamarine,
+silver,
+darkgreen,
+black,
+green,
+aliceblue,
+whitesmoke,
+none;
+
+/*medidas en porcetaje*/
+$p-porcent:
+0.5%,
+40%,
+100%;
+
+/*height*/
+$p-height:
+100vh;
+
+/*medidas en px*/
+$p-size:
+18px,
+50px;
+
+/*medida margin*/
+$margin:
+0,
+auto,
+none;
+
+/*mapa h1 de titulos*/
+$map-titulos:(
+    Ffamily: Arial,
+    Fsize: 30px,
+    Mcolor: aquamarine,
+    Ttext: 0.5px darkgreen
+);
+
+/*mixin con parametro*/
+@mixin flexin($display, $direction, $align) {
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+}

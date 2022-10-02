@@ -1,0 +1,29 @@
+header{
+    /*color background*/
+    background: $bg-color;
+    /*submenu navbar*/
+    .nav-item, button{
+        font-size: nth($list: $p-porcent, $n: 3);
+        font-family: Arial, Helvetica, sans-serif;
+        a:not(.sub){
+            &:hover{
+                color: nth($list: $bt-color, $n: 1);
+            }
+        }
+    }
+    /*navbar*/
+    .dropdown-menu{
+        background-color: nth($list: $bt-color, $n: 2);
+        --bs-dropdown-link-active-bg: #198754;
+        --bs-dropdown-link-hover-bg: #7FFFD4;
+    }
+    /*boton buscar*/
+    .button{
+        --bs-btn-hover-bg:none;
+        --bs-btn-hover-color: #7FFFD4;
+        --bs-btn-hover-border-color: #7FFFD4;
+        --bs-btn-active-color: #7FFFD4;
+        --bs-btn-active-bg: none;
+        --bs-btn-active-border-color: #7FFFD4;
+    }
+}
