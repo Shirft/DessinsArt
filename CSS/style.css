@@ -1,6 +1,7 @@
 /*variable color background header y footer*/
 /*color botones de menu, navbar y footer*/
 /*medidas en porcetaje*/
+/*height*/
 /*medidas en px*/
 /*medida margin*/
 /*mapa h1 de titulos*/
@@ -33,6 +34,20 @@ header .button {
   --bs-btn-active-border-color: #7FFFD4;
 }
 
+/*body*/
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  min-height: 100vh;
+}
+
 footer {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(142, 233, 126) 35%, rgb(0, 212, 255) 100%);
   margin-top: auto;
@@ -46,7 +61,7 @@ footer a {
   text-decoration: none;
 }
 footer a:hover {
-  color: whitesmoke none;
+  color: whitesmoke;
 }
 footer .footer_social img {
   width: 50px;
@@ -82,8 +97,8 @@ footer .footer_flex .accordion .accordion-button .accordion-button:not(.collapse
   transform: var(--bs-accordion-btn-icon-transform);
 }
 
-/*aplicacion extend*/
-.content_img_slider, .Formulario_ayuda, .titulo_mates, .titulo_cuadros, .titulo_Central, .content_ofertas, .contect_formulario, .content_tabla, #content_quienessomos, .content_prom {
+/*padding en contenido de section de htmls*/
+.content_img_slider, section .Formulario_ayuda, section .titulo_mates, section .titulo_cuadros, .titulo_Central, .content_ofertas, .contect_formulario, .content_tabla, #content_quienessomos, .content_prom {
   padding: 2% 0 2% 0.5%;
 }
 
@@ -94,20 +109,25 @@ footer .footer_flex .accordion .accordion-button .accordion-button:not(.collapse
   -webkit-text-stroke: 0.5px darkgreen;
 }
 
-/*aplicacion map y extend*/
-.content_titulo, .Formulario_ayuda, .titulo_mates, .titulo_cuadros, .content_titulo_ofertas {
+/*color background*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  /*h1 de los titulos*/
+  /*flex texto quienes somos*/
+}
+section .content_titulo, section .Formulario_ayuda, section .titulo_mates, section .titulo_cuadros, section .content_titulo_ofertas {
   font-family: Arial;
   font-size: 30px;
   color: aquamarine;
   -webkit-text-stroke: 0.5px darkgreen;
 }
-
-.Formulario_ayuda, .titulo_mates, .titulo_cuadros {
+section .Formulario_ayuda, section .titulo_mates, section .titulo_cuadros {
   padding-bottom: 0;
 }
-
-/*mixin con parametro*/
-#content_quienessomos {
+section #content_quienessomos {
   display: flex;
   flex-direction: column;
   align-items: center;

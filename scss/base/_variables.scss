@@ -9,7 +9,7 @@ darkgreen,
 black,
 green,
 aliceblue,
-whitesmoke
+whitesmoke,
 none;
 
 /*medidas en porcetaje*/
@@ -17,6 +17,10 @@ $p-porcent:
 0.5%,
 40%,
 100%;
+
+/*height*/
+$p-height:
+100vh;
 
 /*medidas en px*/
 $p-size:

@@ -1,0 +1,10 @@
+/*body*/
+*{
+    padding: nth($list: $margin, $n: 1);
+    margin: nth($list: $margin, $n: 1);
+    max-width: nth($list: $p-porcent, $n: 3);
+}
+body{
+    @include flexin(flex, column, none);
+    min-height: nth($list: $p-height, $n: 1);
+}
