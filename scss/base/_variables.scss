@@ -1,5 +1,12 @@
 /*variable color background header y footer*/
 $bg-color:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,233,126,1) 35%, rgba(0,212,255,1) 100%);
+$bg-color2:#ffc5b4;
+$bg-color3:#7FFFD4;
+$bg-color4:#198754;
+
+/*style border*/
+$b-border:
+groove;
 
 /*color botones de menu, navbar y footer*/
 $bt-color:
@@ -12,6 +19,13 @@ aliceblue,
 whitesmoke,
 none;
 
+$bt-color2:
+#cd8d7c,
+#eeac99,
+#8e5445,
+#ad7060,
+#ffece6,
+none;
 /*medidas en porcetaje*/
 $p-porcent:
 0.5%,
@@ -25,7 +39,9 @@ $p-height:
 /*medidas en px*/
 $p-size:
 18px,
-50px;
+50px,
+0.1px;
+
 
 /*medida margin*/
 $margin:
@@ -37,8 +53,8 @@ none;
 $map-titulos:(
     Ffamily: Arial,
     Fsize: 30px,
-    Mcolor: aquamarine,
-    Ttext: 0.5px darkgreen
+    Mcolor: #eeac99,
+    Ttext: 0.5px #8e5445
 );
 
 /*mixin con parametro*/

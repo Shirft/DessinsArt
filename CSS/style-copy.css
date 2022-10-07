@@ -1,7 +1,15 @@
-                            /*sections html*/
+/*scrollbar*/
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb{
+    background: #8e5445;
+    border-radius: 5px;
+}
+                /*sections html*/
 /*slider index color button*/
 .carousel-dark .carousel-indicators [data-bs-target]{
-    background-color: #0fc;
+    background-color: #8e5445;
 }
 /*div promociones*/
 .content_prom h2{
@@ -19,12 +27,12 @@
 #content_quienessomos p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
-    border: 5px groove aquamarine;
+    border: 5px groove #eeac99;
     width: 65%;
     height: 50%;
     font-size: 25px;
-    color: aquamarine;
-    -webkit-text-stroke: 0.5px darkgreen;
+    color: #ffece6;
+    -webkit-text-stroke: 0.5px #8e5445;
     background-color: silver;
     text-align: center;
 }
@@ -32,7 +40,7 @@
 /*Productos - Ver todo*/
 .content_prod{
     padding: 2%;
-    border: green groove;
+    border: #8e5445 groove;
     border-radius: 2%;
     margin: 1%;
     height: 10%;
@@ -47,7 +55,7 @@
     border-radius: 2%;
     text-align: center;
     padding: 1%;
-    border: green groove;
+    border: #8e5445 groove;
     margin: 1% 1% 2% 4%;
     
 }

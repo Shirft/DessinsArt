@@ -1,29 +1,33 @@
 header{
     /*color background*/
-    background: $bg-color;
+    background: $bg-color2;
+    border-bottom: nth($list: $bt-color, $n: 4) nth($list: $b-border, $n: 1);
+    border-width: nth($list: $p-size, $n: 3);
     /*submenu navbar*/
     .nav-item, button{
-        font-size: nth($list: $p-porcent, $n: 3);
+        font-size: nth($list: $p-size, $n: 1);
         font-family: Arial, Helvetica, sans-serif;
         a:not(.sub){
             &:hover{
-                color: nth($list: $bt-color, $n: 1);
+                color: nth($list: $bt-color2, $n: 5);
             }
         }
     }
     /*navbar*/
     .dropdown-menu{
-        background-color: nth($list: $bt-color, $n: 2);
-        --bs-dropdown-link-active-bg: #198754;
-        --bs-dropdown-link-hover-bg: #7FFFD4;
+        background-color: nth($list: $bt-color2, $n: 1);
+        --bs-dropdown-link-active-bg: #8e5445;
+        --bs-dropdown-link-hover-bg: #eeac99;
     }
     /*boton buscar*/
     .button{
+        --bs-btn-color:#8e5445;
+        --bs-btn-border-color:#8e5445;
         --bs-btn-hover-bg:none;
-        --bs-btn-hover-color: #7FFFD4;
-        --bs-btn-hover-border-color: #7FFFD4;
-        --bs-btn-active-color: #7FFFD4;
+        --bs-btn-hover-color: #ffece6;
+        --bs-btn-hover-border-color: #ffece6;
+        --bs-btn-active-color: #8e5445;
         --bs-btn-active-bg: none;
-        --bs-btn-active-border-color: #7FFFD4;
+        --bs-btn-active-border-color: #8e5445;
     }
 }

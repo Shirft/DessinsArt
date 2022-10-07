@@ -54,4 +54,12 @@ section{
         @include flexin(flex, column, center);
     }
 }
-
+/*boton comprar*/
+.btn-success{
+    --bs-btn-bg:#8e5445;
+    --bs-btn-border-color:#8e5445;
+    --bs-btn-hover-bg:#ad7060;
+    --bs-btn-hover-border-color:var(--bs-btn-hover-bg);
+    --bs-btn-active-bg:var(--bs-btn-bg);
+    --bs-btn-active-border-color:var(--bs-btn-bg);
+}
