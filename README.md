@@ -1,11 +1,10 @@
-##Nombre del Proyecto:
+## `Nombre del proyecto`
 Dessins-Art
 
-##Descripcion:
-Pagina web realizada con HTML5, CSS3 y SASS. Que trata de ser modelo de un sitio web, donde se muestran prouctos artisticos de pintura aplicados en mates y cuadros, 
-relacionados en su mayoria al anime.
+## `Descripcion`
+Pagina web que trata de ser modelo de un sitio web, donde se muestran productos artisticos de pintura aplicados en mates y cuadros, 
+relacionados en su mayoria al anime y comics.
 
-##Muestra funcionamiento de la página:
+## `Herramientas utilizadas`
+HTML5, CSS3, SASS y Bootstrap v2.7.0
 
-##Herramientas usadas para su desarrollo:
-HTML5, CSS3, Bootstrap, Sass
